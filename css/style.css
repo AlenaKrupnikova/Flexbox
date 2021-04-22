@@ -1,0 +1,138 @@
+body {
+    font-family:Open Sans, sans-serif;
+    font-size: 14px;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+.header__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__center {
+    
+}
+.header__item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+}
+.header__link{
+    text-decoration: none;
+    font-weight: 600;
+    color:#252A34;
+}
+.header__link_active {
+    font-weight: 800;
+}
+.header__link_red {
+    color: #FF2E63;
+    padding-right: 20px;
+}
+.btn {
+
+}
+.btn__1 {
+    color: #FFFFFF;
+    background: #FF2E63;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;    
+}
+.main-car {
+    width: 882px;
+    height: 372px;
+    position: absolute;
+    top: 182px;
+    right: 55px;
+    z-index: 2;
+}
+.ellipse {
+    width: 445px;
+    height: 494px;
+    position: absolute;
+    top: 98px;
+    right: 146px;
+}
+.question{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.2;
+    position: absolute;
+    left: 55px;
+    top: 182px;
+    z-index: 3;
+}
+.question_red {
+    color:#FF2E63 ;
+}
+.btn__body{
+    background:#346CD9;
+    color: #FFFFFF;
+    border: none;
+    width: 162px;
+    height: 49px;
+    position: absolute;
+    left: 56px;
+    top: 345px;
+}
+.products {
+    padding: 55px;
+}
+.products__titlte {
+    text-align: left;
+    margin-bottom: 56px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.27;
+}
+.products__row {
+    display: flex;
+    margin: 0 --15px;
+}
+.products__column {
+    flex: 0 1 25%;
+    padding: 0 15px;
+}
+.products__item {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.products__model {
+    font-weight: 700;
+    font-size: 20px;
+    line-height:1.27;
+    color: #252A34;
+    padding: 13px;
+}
+.products__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height:1.27;
+}
+.products__price_red {
+    color:#FF2E63;
+}
+.products__availability {
+    color: #343434;
+    padding-top: 17px;
+    padding-bottom: 13px;
+}
+.products__btn {
+    background: #346CD9;
+    border-radius: 10px 0px;
+    width: 40px;
+    height: 46px;
+    align-self: end;
+}
