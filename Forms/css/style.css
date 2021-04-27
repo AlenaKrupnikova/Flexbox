@@ -1,0 +1,161 @@
+body {
+    font-family:Open Sans, sans-serif;
+    font-size: 14px;
+    color: #343434;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.header__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__left:hover{
+    transform: scale(2);
+}
+.header__item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+}
+.header__link{
+    text-decoration: none;
+    font-weight: 600;
+    color:#252A34;
+    ;
+}
+.header__item:hover {
+    background: #FF2E63;
+    border-radius: 5px;
+}
+.header__link_active {
+    font-weight: 800;
+}
+.header__link_red {
+    color: #FF2E63;
+    padding-right: 20px;
+}
+.header__logo {
+    display: inline-block;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:#252A34;
+}
+.header__logo_red {
+    color: #FF2E63;
+    margin: -3px;
+}
+.btn {
+    font-family: Open Sans, sans-serif; 
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn:hover {
+    opacity: 0.5;
+}
+.btn__login {
+    color: #FF2E63;
+    background: none;
+    border: none;
+}
+.btn__register {
+    color: #FFFFFF;
+    background: #FF2E63;
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;    
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.tabs__name {
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 1.28;
+    color: #343434;
+}
+.tabs__links {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    order: 0;
+    white-space: nowrap;
+    border-bottom: 2px solid;
+    justify-content: center;
+}
+.tabs__links>a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 10px;
+    text-align: center;
+    color: black;
+}
+  
+.tabs__links>a:hover {
+    background-color: rgba(227, 242, 253, 0.3);
+}
+  
+.tabs>#content-1:target~.tabs__links>a[href="#content-1"],
+.tabs>#content-2:target~.tabs__links>a[href="#content-2"]   {
+    background-color: #bbdefb;
+    cursor: default;
+}
+  
+.tabs>div:not(.tabs__links) {
+    display: none;
+    order: 1;
+}
+  
+.tabs>div:target {
+    display: inherit;
+}
+.form {
+    min-width: 417px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form__title {
+    font-family: Rajdhani, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    color: #252A34;
+    text-align: center;
+    margin-top: 57px;
+    margin-bottom: 15px;
+}
+.form__btn {
+    background: #FF2E63;
+    border-radius: 5px;
+    border: none;
+    width: 131px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    color: #FFFFFF;
+}
+
+
+.footer {
+    background: #346CD9;
+}
+.white {
+    color:#FFFFFF;
+}
