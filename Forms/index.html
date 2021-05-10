@@ -37,20 +37,17 @@
          </header>
 
          <div class="tabs container">
-
-                    <div class="tabs__links">
-                        <a class="tabs__name" href="#content-1">Login</a>
-                        <a class="tabs__name" href="#content-2">Register</a>
-                     </div>
-
-                         <div id="content-1">
-                          <div class="form">
-                              <div class="form__title">Log In</div>
-                            <form action="#" method="post" >
-                                  <label >
-                                    E-mail
-                                    <input type="email" name="mail" >
+                  
+             <div id="content-1">
+                <div class="form">
+                    <div class="form__title">Log In</div>
+                        <form action="#" method="post" >
+                            <div class="form__row">
+                                <label >
+                                <span class="form__label">E-mail</span> 
+                                <input type="email" name="mail" >
                                 </label>
+                            </div>
                                 
                                 <label >
                                     Password
@@ -61,15 +58,12 @@
                                 <input type="checkbox" name="" id="checkbox">
                                 <label for="checkbox">Remember me</label>
                                <input class="form__btn" type="submit" value="Log in">
-                               
-                                
-                            </form>
-                          </div>   
-
-                             </div>
-                        </div>
-
-                <div id="content-2">
+                                                        
+                        </form>
+                </div>   
+             </div>
+                      
+                        <div id="content-2">
                     <div class="form">
                         <div class="form__title">Create an Account</div>
                       <form action="#" method="post" >
@@ -104,9 +98,13 @@
                             and    <a href="#">Privacy Policy</a>                     .</p>
                           
                       </form>
-                    </div>   
+                    </div>  
+                    <div class="tabs__links">
+                        <a class="tabs__name" href="#content-1">Login</a>
+                        <a class="tabs__name" href="#content-2">Register</a>
+                     </div> 
             </div>
-                 
+        </div>       
             
             </div>
 

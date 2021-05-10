@@ -36,18 +36,28 @@
                
         </header>
 <div class="ShopContainer container">
+
+    <div class="leftContent">
     <div class="leftNav"> 
         <ul class="accordion">
             <li class="accordion__item">
-                <input type="checkbox"  class="accordion__toogle" name="" id="">
-                <h2 class="h2 accordion__title">Price</h2>
+                <input type="checkbox"  class="accordion__toogle" name="" id="price">
+               <div class="arrow">
+               <h2 class="h2 accordion__title">Price</h2> 
+               <div class="accordion__arrow"><img src="../Shop/images/Vector 3.png" alt=""></div>
+               </div> 
                 <div class="accordion__content">
-
+                  <p class="accordion__name">Min</p>
+                  <input type="number" name="num" id="">
+                  <p class="accordion__name">Max</p>
+                  <input type="number" name="num" id="">
                 </div>
             </li>
             <li class="accordion__item">
                 <input type="checkbox"  class="accordion__toogle" name="" id="">
+               <div>
                 <h2 class="h2 accordion__title">Brands</h2>
+               </div> 
                 <div class="accordion__content">
                     <div class="accordion__brand">
                             <input type="checkbox" name="car" id="toyota">
@@ -77,20 +87,21 @@
                 </div>
             </li>
         </ul>
-        <div>
+        <div class="search">
             <label class="search">Search</label>
             <input type="text" >
             
         </div>
-        <div class="contact">
-            <div class="contact__title">Contacts Details</div>  
-            <div><a class="contact__tel" href="tel: 879-332-9375">Phone: 879-332-9375</a></div> 
-             <div><a  class="contact__mail" href="mailto: info@pixsellz.io">Email: info@pixsellz.io</a></div>
-            <address class="contact__adress">Adress: 456 Hagenes Gardens Suite 808</address>
-        </div>  
+        
     </div>
 
-   
+    <div class="contact">
+        <div class="contact__title">Contacts Details</div>  
+        <div><a class="contact__tel" href="tel: 879-332-9375">Phone: 879-332-9375</a></div> 
+         <div><a  class="contact__mail" href="mailto: info@pixsellz.io">Email: info@pixsellz.io</a></div>
+        <address class="contact__adress">Adress: 456 Hagenes Gardens Suite 808</address>
+    </div>  
+</div>
     
     <div class="shop">
         <div class="shop__title"> Our shop</div>
@@ -172,7 +183,7 @@
         </div>  
         
            
-        </div>  
+</div>  
         <div class="pages">
             <a  class="pages__number" href="#">1</a>
             <a class="pages__number" href="#">2</a>

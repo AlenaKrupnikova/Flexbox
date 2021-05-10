@@ -51,7 +51,6 @@ body {
 }
 .header__logo_red {
     color: #FF2E63;
-    margin: -3px;
 }
 .btn {
     font-family: Open Sans, sans-serif; 
@@ -106,7 +105,18 @@ body {
     text-align: center;
     color: black;
 }
-  
+  #content-2 {
+      display: none;
+  }
+  #content-1 {
+      display: none;
+  }
+  #content-1:target {
+      display: block;
+  }
+  #content-2:target {
+    display: block;
+}
 .tabs__links>a:hover {
     background-color: rgba(227, 242, 253, 0.3);
 }
@@ -158,4 +168,15 @@ body {
 }
 .white {
     color:#FFFFFF;
+}
+.form__row {
+    margin-bottom:14px ;
+}
+input {
+    display: block;
+    width: 100%;
+}
+.form__label {
+    display: block;
+    margin-bottom: 14px;
 }

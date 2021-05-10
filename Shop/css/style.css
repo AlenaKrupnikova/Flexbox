@@ -79,8 +79,10 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    width: 270px;
-    height: 478px;
+    max-width: 270px;
+    max-height: 478px;
+    padding: 25px;
+
 }
 .accordion {
     margin: 0;
@@ -95,6 +97,10 @@ body {
     padding-bottom: 1em;
     display: none;
 }
+.accordion__toogle:checked + .accordion__arrow {
+    transform: rotate(-180deg);
+}
+
 .accordion__toogle:checked~ .accordion__content {
     display: block;
 }
