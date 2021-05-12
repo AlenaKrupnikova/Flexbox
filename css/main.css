@@ -95,16 +95,15 @@ body {
 }
 .car__foto {
     width: 100%;
-    position: absolute;
-    top: 182px;
-    right: 55px;
+    position: relative;
     z-index: 2;
 }
 .car__ellipse {
     width: 50%;
     position: absolute;
-    top: -14%;
-    right: -2%;
+    right: -1%;
+    bottom: 9%;
+    z-index: 1;
 }
 .question{
     display: flex;
@@ -112,15 +111,17 @@ body {
     flex-shrink: 0;
     margin-right: -5rem;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.57em;
     line-height: 1.2;
     
 }
 .question__text{
     color: #343434;
+    margin: 0;
 }
 .question_red {
     color:#FF2E63 ;
+    margin: 0;
 }
 .btn__question{
     background:#346CD9;
@@ -128,13 +129,22 @@ body {
     border: none;
     width: 162px;
     height: 49px;
+    margin-top: 45px;
+}
+.title {
+    font-family: Rajdhani, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.27;
+    text-align: center;
+    color: #343434;
 }
 .products {
     padding: 55px;
 }
 .products__titlte {
     text-align: left;
-    margin-bottom: 56px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.27;
@@ -142,9 +152,7 @@ body {
 .products__row {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     padding-bottom: 50px;
-    margin: 0 -15px;
 }
 .products__item {
     display: flex;
@@ -152,10 +160,11 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    min-width: 260px;
+    max-width: 260px;
     flex-grow: 1;
-    max-width: calc(25% - 15px);
+    width: 25%;
     position: relative;
+    margin: 15px;
 }
 .products__foto {
     position: relative;
@@ -176,20 +185,24 @@ body {
     font-size: 20px;
     line-height:1.27;
     color: #252A34;
-    padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 .products__price {
     font-weight: 700;
     font-size: 30px;
     line-height:1.27;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
-.products__price_red {
+.products__price_new {
     color:#FF2E63;
 }
-.products__availability {
+.products__text {
     color: #343434;
-    padding-top: 17px;
-    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-bottom: 15px;
 }
 .products__btn {
     background: #346CD9;
@@ -203,14 +216,6 @@ body {
 .arrow {
     padding: 12px;
     padding-top: 17px;
-}
-.title {
-    font-family: Rajdhani, sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.27;
-    text-align: center;
-    color: #343434;
 }
 .how__list {
     display: flex;
