@@ -117,22 +117,23 @@ body {
     color: #252A34;
     cursor: pointer;
     padding-right: 12px;
+    padding-bottom: 20px;
     font-style: normal;
 }
 .contact__tel::before {
-    content: url(../images/phone.png);
+    content: url(../Shop/images/phone.png);
     width: 18px;
     height: 18px;
     margin-right: 12px;
 }
 .contact__mail::before {
-    content: url(../images/mail.png);
+    content: url(../Shop/images/mail.png);
     width: 18px;
     height: 18px;
     margin-right: 12px;
 }
 .contact__adress::before {
-    content: url(../images/adress.png);
+    content: url(../Shop/images/adress.png);
     width: 18px;
     height: 18px;
     margin-right: 12px;
@@ -149,20 +150,24 @@ body {
     line-height: 1.28;
     color: #343434;
     text-align: left;
+    margin-left: 30px;
 }
 .shop__row{
     display: flex;
     justify-content: space-between;
-
+    margin: 15px;
+    flex-wrap: wrap;
 }
 .products__item {
     display: flex;
     flex-direction: column;
-    flex: 1 1 33.3%;
+    flex-grow: 1;
     background: #FFFFFF;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    min-width: 260px;
+    max-width: 260px;
+    width: 25%;
+    margin: 15px;
 }
 .products__foto {
     position: relative;
@@ -183,14 +188,18 @@ body {
     font-size: 20px;
     line-height:1.27;
     color: #252A34;
-    padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 .products__price {
     font-weight: 700;
     font-size: 30px;
     line-height:1.27;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
-.products__price_red {
+.products__price_new {
     color:#FF2E63;
 }
 .products__price_old {
@@ -198,10 +207,9 @@ body {
     color: gray;
     font-size: 22px;
 }
-.products__availability {
+.products__text {
     color: #343434;
-    padding-top: 17px;
-    padding-bottom: 13px;
+    padding-left: 20px;
 }
 .products__btn {
     background: #FF2E63;
@@ -210,6 +218,7 @@ body {
     height: 40px;
     font-size: 16px;
     color: FFFFFF;
+    margin: 20px auto;
 }
 .title {
     font-family: Rajdhani, sans-serif;

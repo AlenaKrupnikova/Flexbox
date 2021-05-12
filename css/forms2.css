@@ -54,6 +54,9 @@ body {
     color: #FF2E63;
     margin: -3px;
 }
+.LogReg {
+    min-height: 80vh;
+}
 .LogReg__link {
     text-align: center;
 }
@@ -124,7 +127,8 @@ body {
     border-radius: 5px;
 }
 .form__input_shot {
-    width: 70%;
+    width: 50%;
+    height: 2.3em;
 }
 .form__radioLabel {
     padding-right: 20px;
