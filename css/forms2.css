@@ -57,6 +57,10 @@ body {
 .LogReg {
     min-height: 80vh;
 }
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .LogReg__link {
     text-align: center;
 }
@@ -68,13 +72,6 @@ body {
     color: #343434;
     text-decoration: none;
     padding-right: 60px;
-}
-.tabs:after {
-    content: "";
-    width: 100%;
-    height: 5px;
-    color: #FF2E63 ;
-    border-radius:5px ;
 }
 .LogReg__link:after {
     content: "";
@@ -98,6 +95,33 @@ body {
 .LogReg__content {
     display: none;
     position: relative;
+}
+.LogReg__content:target~.LogReg__link .tabs__log{
+    width: 118px;
+    height: 5px;
+    background-color: #FF2E63 ;
+    border-radius:5px ;
+    position: relative;
+    bottom: 0.8em;
+    right: 7em;
+}
+#Login:target~.LogReg__link .tabs__log{
+    width: 118px;
+    height: 5px;
+    background-color: #FF2E63 ;
+    border-radius:5px ;
+    position: relative;
+    bottom: 0.8em;
+    right: 7em;
+}
+#Register:target~.LogReg__link .tabs__reg{
+    width: 118px;
+    height: 5px;
+    background-color: #FF2E63 ;
+    border-radius:5px ;
+    position: relative;
+    bottom: 0.8em;
+    right: 7em;
 }
 .form {
     max-width: 417px;
