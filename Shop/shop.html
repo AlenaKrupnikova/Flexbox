@@ -43,47 +43,52 @@
     <div class="leftNav"> 
         <ul class="accordion">
             <li class="accordion__item">
-                <input type="checkbox"  class="accordion__toogle" name="" id="price">
+                <input type="checkbox"  class="accordion__toogle"  id="price">
                <div class="arrow">
-               <h2 class="h2 accordion__title">Price</h2> 
+               <label for="price" class="h2 accordion__title">Price</label> 
                <div class="accordion__arrow"><img src="../Shop/images/Vector 3.png" alt=""></div>
                </div> 
-                <div class="accordion__content">
-                    <p class="accordion__name">Min</p>
-                    <input class="MinMax" type="number" name="num" min="1">
-                         <p>-</p>         
-                    <p class="accordion__name">Max</p>
-                    <input class="MinMax" type="number" name="num" min="1">
+                <div class="accordion__content" >
+                   <div class="MinMax">
+                        <p class="accordion__name">Min</p>
+                        <input  type="number" name="num" min="1">
+                   </div> 
+                        <div>-</div>         
+                    <div class="MinMax">
+                         <p class="accordion__name">Max</p>
+                        <input  type="number" name="num" min="1">
+                    </div >
                 </div>
             </li>
             <li class="accordion__item">
-                <input type="checkbox"  class="accordion__toogle" name="" id="">
+                <input type="checkbox"  class="accordion__toogle" id="brands">
                <div>
-                <h2 class="h2 accordion__title">Brands</h2>
+                <label for="brands" class="h2 accordion__title">Brands</label>
+                <div class="accordion__arrow"><img src="../Shop/images/Vector 3.png" alt=""></div>
                </div> 
                 <div class="accordion__content">
                     <div class="accordion__brand">
-                            <input type="checkbox" name="car" id="toyota">
+                            <input class="brand__input" type="checkbox" name="car" id="toyota">
                             <label for="toyota">Toyota</label>
-                            <span class="numb"> (13) </span>
+                            <span > (13) </span>
                         </div>
                         <div class="accordion__brand">
-                            <input type="checkbox" name="car" id="porsche">
+                            <input class="brand__input" type="checkbox" name="car" id="porsche">
                             <label for="porsche">Porsche</label>
                             <span> (3) </span>
                         </div>
                         <div class="accordion__brand">
-                            <input type="checkbox" name="car" id="ford">
+                            <input class="brand__input" type="checkbox" name="car" id="ford">
                             <label for="ford">Ford</label>
                             <span> (8) </span>
                         </div>
                         <div class="accordion__brand">
-                            <input type="checkbox" name="car" id="bugatti">
+                            <input class="brand__input" type="checkbox" name="car" id="bugatti">
                             <label for="bugatti">Bugatti</label>
                             <span> (5) </span>
                         </div>
                         <div class="accordion__brand">
-                            <input type="checkbox" name="car" id="audi">
+                            <input class="brand__input" type="checkbox" name="car" id="audi">
                             <label for="audi">Audi</label>
                             <span> (12) </span>
                         </div>
@@ -92,16 +97,18 @@
         </ul>
         <div class="search" >
             <label class="h2 ">Search</label>
-            <input class="search__input" placeholder="Search by name..." type="text" placeholder  >
-            
+            <input class="search__input" placeholder="Search by name..." type="text"   >
         </div>
         
     </div>
 
     <div class="contact">
         <div class="h2">Contacts Details</div>  
-        <div><a class="contact__tel" href="tel: 879-332-9375">Phone: 879-332-9375</a></div> 
-         <div><a  class="contact__mail" href="mailto: info@pixsellz.io">Email: info@pixsellz.io</a></div>
+        <div>
+            <svg class="icon icon-mobile"><use xlink:href="../sprite.svg#icon-mobile"></use></svg>
+            <a class="contact__tel" href="tel: 879-332-9375">Phone: 879-332-9375</a>
+        </div> 
+        <div><a  class="contact__mail" href="mailto: info@pixsellz.io">Email: info@pixsellz.io</a></div>
         <address class="contact__adress">Adress: 456 Hagenes Gardens Suite 808</address>
     </div>  
 </div>
